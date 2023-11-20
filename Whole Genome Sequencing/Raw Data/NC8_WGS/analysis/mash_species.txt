@@ -1,0 +1,6 @@
+contig,identity,shared-hashes,median-multiplicity,p-value,query-ID,query-comment,contig_len,kmer_score,query-comment_short
+contig_1,0.976813,611/1000,1.0,0.0,GCF_000438785.2_ASM43878v2_genomic.fna.gz,"[172 seqs] NZ_ATWU01000001.1 Vibrio natriegens NBRC 15636 = ATCC 14048 = DSM 759 ctg1, whole genome shotgun sequence [...]","2,969,744",0.611, NZ_ATWU01000001.1 Vibrio natriegens NBRC 15636 = ATCC 14048 = DSM 759 ctg1
+contig_10,0.867872,51/1000,1.0,1e-323,ref|NZ_CP006375.1|,"Aureimonas sp. AU20 plasmid pAU20rrn, complete sequence","40,828",0.051,Aureimonas sp. AU20 plasmid pAU20rrn
+contig_4,0.867872,51/1000,2.0,3.5443e-292,ref|NZ_CP006375.1|,"Aureimonas sp. AU20 plasmid pAU20rrn, complete sequence","179,977",0.051,Aureimonas sp. AU20 plasmid pAU20rrn
+contig_5,0.867872,51/1000,1.0,4.17201e-316,ref|NZ_CP006375.1|,"Aureimonas sp. AU20 plasmid pAU20rrn, complete sequence","58,570",0.051,Aureimonas sp. AU20 plasmid pAU20rrn
+contig_8,0.951624,353/1000,1.0,0.0,GCF_001591085.1_ASM159108v1_genomic.fna.gz,"[27 seqs] NZ_BCUC01000001.1 Vibrio natriegens NBRC 15636 = ATCC 14048 = DSM 759 DNA, contig: VNA01S_CON0001_0001, whole genome shotgun sequence [...]","1,927,135",0.353, NZ_BCUC01000001.1 Vibrio natriegens NBRC 15636 = ATCC 14048 = DSM 759 DNA

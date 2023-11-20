@@ -1,0 +1,100 @@
+Checking program versions
+This is medaka 1.8.0
+Program    Version    Required   Pass     
+bcftools   1.17       1.11       True     
+bgzip      1.17       1.11       True     
+minimap2   2.26       2.11       True     
+samtools   1.17       1.11       True     
+tabix      1.17       1.11       True     
+Aligning basecalls to draft
+Creating fai index file /data/_231115_BACT_B/Lab_C4G_1/03_flye_only/assembly.fasta.fai
+Creating mmi index file /data/_231115_BACT_B/Lab_C4G_1/03_flye_only/assembly.fasta.map-ont.mmi
+[M::mm_idx_gen::0.177*1.01] collected minimizers
+[M::mm_idx_gen::0.216*1.37] sorted minimizers
+[M::main::0.274*1.29] loaded/built the index for 3 target sequence(s)
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 3
+[M::mm_idx_stat::0.289*1.27] distinct minimizers: 946755 (98.84% are singletons); average occurrences: 1.025; average spacing: 5.348; total length: 5187527
+[M::main] Version: 2.26-r1175
+[M::main] CMD: minimap2 -I 16G -x map-ont -d /data/_231115_BACT_B/Lab_C4G_1/03_flye_only/assembly.fasta.map-ont.mmi /data/_231115_BACT_B/Lab_C4G_1/03_flye_only/assembly.fasta
+[M::main] Real time: 0.295 sec; CPU: 0.375 sec; Peak RSS: 0.051 GB
+[M::main::0.061*1.04] loaded/built the index for 3 target sequence(s)
+[M::mm_mapopt_update::0.075*1.03] mid_occ = 14
+[M::mm_idx_stat] kmer size: 15; skip: 10; is_hpc: 0; #seq: 3
+[M::mm_idx_stat::0.086*1.03] distinct minimizers: 946755 (98.84% are singletons); average occurrences: 1.025; average spacing: 5.348; total length: 5187527
+[M::worker_pipeline::92.362*1.87] mapped 126559 sequences
+[M::worker_pipeline::92.671*1.86] mapped 4488 sequences
+[M::main] Version: 2.26-r1175
+[M::main] CMD: minimap2 -x map-ont --secondary=no -L --MD -A 2 -B 4 -O 4,24 -E 2,1 -t 2 -a /data/_231115_BACT_B/Lab_C4G_1/03_flye_only/assembly.fasta.map-ont.mmi /data/_231115_BACT_B/Lab_C4G_1/03_flye_only/filt.downsample.fastq
+[M::main] Real time: 92.684 sec; CPU: 172.781 sec; Peak RSS: 1.106 GB
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
+Running medaka consensus
+[21:21:57 - Predict] Setting tensorflow inter/intra-op threads to 2/1.
+[21:21:57 - Predict] Processing region(s): contig_1:0-3254720 contig_2:0-5672 contig_3:0-1927135
+[21:21:57 - Predict] Using model: /data/.snakemake/conda/e4ff4f91e2300245d2df7afaf1aa2267_/lib/python3.10/site-packages/medaka/data/r1041_e82_400bps_sup_v4.2.0_model.tar.gz.
+2023-11-15 21:21:57.532812: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+[21:21:57 - Predict] Processing 7 long region(s) with batching.
+[21:21:58 - MdlStrTF] Model <keras.engine.sequential.Sequential object at 0x7fe2aa2ef0d0>
+[21:21:58 - MdlStrTF] loading weights from /tmp/tmpgget7qx6/model/variables/variables
+[21:21:58 - BAMFile] Creating pool of 16 BAM file sets.
+[21:21:58 - Sampler] Initializing sampler for consensus of region contig_1:0-1000000.
+[21:21:58 - Sampler] Initializing sampler for consensus of region contig_1:999000-1999000.
+[21:21:58 - PWorker] Running inference for 5.2M draft bases.
+[21:22:00 - Feature] Processed contig_1:999000.0-1998999.0 (median depth 95.0)
+[21:22:00 - Sampler] Took 1.90s to make features.
+[21:22:00 - Sampler] Initializing sampler for consensus of region contig_1:1998000-2998000.
+[21:22:00 - Feature] Processed contig_1:0.0-999999.0 (median depth 108.0)
+[21:22:00 - Sampler] Took 2.08s to make features.
+[21:22:00 - Sampler] Initializing sampler for consensus of region contig_1:2997000-3254720.
+[21:22:01 - Feature] Processed contig_1:2997000.0-3254719.0 (median depth 113.0)
+[21:22:01 - Sampler] Took 0.75s to make features.
+[21:22:01 - Sampler] Initializing sampler for consensus of region contig_2:0-5672.
+[21:22:01 - Feature] Pileup counts do not span requested region, requested contig_2:0-5672, received 405-5635.
+[21:22:01 - Feature] Processed contig_2:405.0-5635.0 (median depth 2.0)
+[21:22:01 - Sampler] Took 0.01s to make features.
+[21:22:01 - Sampler] Region contig_2:405.0-5635.0 (5289 positions) is smaller than inference chunk length 10000, quarantining.
+[21:22:01 - Sampler] Initializing sampler for consensus of region contig_3:0-1000000.
+[21:22:01 - Feature] Processed contig_1:1998000.0-2997999.0 (median depth 105.0)
+[21:22:01 - Sampler] Took 1.11s to make features.
+[21:22:01 - Sampler] Initializing sampler for consensus of region contig_3:999000-1927135.
+[21:22:02 - Feature] Processed contig_3:0.0-999999.0 (median depth 96.0)
+[21:22:02 - Sampler] Took 1.12s to make features.
+[21:22:02 - Feature] Processed contig_3:999000.0-1927134.0 (median depth 108.0)
+[21:22:02 - Sampler] Took 1.11s to make features.
+[21:22:12 - PWorker] Batches in cache: 8.
+[21:22:12 - PWorker] 10.2% Done (0.5/5.2 Mbases) in 14.7s
+[21:22:21 - PWorker] Batches in cache: 8.
+[21:22:29 - PWorker] Batches in cache: 8.
+[21:22:29 - PWorker] 30.4% Done (1.6/5.2 Mbases) in 31.5s
+[21:22:37 - PWorker] Batches in cache: 7.
+[21:22:45 - PWorker] Batches in cache: 6.
+[21:22:45 - PWorker] 50.4% Done (2.6/5.2 Mbases) in 47.6s
+[21:22:53 - PWorker] Batches in cache: 5.
+[21:23:01 - PWorker] Batches in cache: 4.
+[21:23:01 - PWorker] 70.5% Done (3.7/5.2 Mbases) in 63.5s
+[21:23:09 - PWorker] Batches in cache: 3.
+[21:23:17 - PWorker] Batches in cache: 2.
+[21:23:17 - PWorker] 91.1% Done (4.7/5.2 Mbases) in 79.6s
+[21:23:26 - PWorker] Batches in cache: 1.
+[21:23:27 - PWorker] Processed 10 batches
+[21:23:27 - PWorker] All done, 1 remainder regions.
+[21:23:27 - Predict] Processing 1 short region(s).
+[21:23:27 - MdlStrTF] Model <keras.engine.sequential.Sequential object at 0x7fe2a4318730>
+[21:23:27 - MdlStrTF] loading weights from /tmp/tmpgget7qx6/model/variables/variables
+[21:23:27 - Sampler] Initializing sampler for consensus of region contig_2:405-5636.
+[21:23:27 - PWorker] Running inference for 0.0M draft bases.
+[21:23:28 - Feature] Processed contig_2:405.0-5635.0 (median depth 2.0)
+[21:23:28 - Sampler] Took 0.17s to make features.
+[21:23:38 - PWorker] Batches in cache: 1.
+[21:23:38 - PWorker] 81.0% Done (0.0/0.0 Mbases) in 11.0s
+[21:23:38 - PWorker] Processed 1 batches
+[21:23:38 - PWorker] All done, 0 remainder regions.
+[21:23:38 - Predict] Finished processing all regions.
+[21:23:41 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[21:23:41 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[21:23:41 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[21:23:41 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[21:23:41 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[21:23:41 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[21:23:42 - DataIndx] Loaded 1/1 (100.00%) sample files.
+[21:23:42 - DataIndx] Loaded 1/1 (100.00%) sample files.
+Polished assembly written to _231115_BACT_B/Lab_C4G_1/03_flye_only/medaka/consensus.fasta, have a nice day.

@@ -1,0 +1,4 @@
+ID,status,superkingdom,phylum,class,order,family,genus,species,strain
+contig_2,nomatch,,,,,,,,
+contig_3,found,Bacteria,Proteobacteria,Gammaproteobacteria,Vibrionales,Vibrionaceae,Vibrio,Vibrio natriegens,
+contig_1,found,Bacteria,Proteobacteria,Gammaproteobacteria,Vibrionales,Vibrionaceae,Vibrio,Vibrio natriegens,

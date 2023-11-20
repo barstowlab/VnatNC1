@@ -1,0 +1,16 @@
+[K
+== This is sourmash version 4.8.2. ==
+[K== Please cite Brown and Irber (2016), doi:10.21105/joss.00027. ==
+
+[Kcomputing signatures for files: _231115_BACT_B/Lab_C4G_2/03_flye_only/consensus.fasta
+[KComputing a total of 1 signature(s) for each input.
+[Kcalculated 5 signatures for 5 sequences in _231115_BACT_B/Lab_C4G_2/03_flye_only/consensus.fasta
+[Ksaved 5 signature(s) to '_231115_BACT_B/Lab_C4G_2/03_flye_only/consensus.fasta.sig'. Note: signature license is CC0.
+[K
+== This is sourmash version 4.8.2. ==
+[K== Please cite Brown and Irber (2016), doi:10.21105/joss.00027. ==
+
+[K[K[K... loading database /home/prom/basic_bacterial_genome_pipeline/workflow/resources/sourmash_db/genbank-k31.lca.json.gz[K[K[Kloaded 1 LCA databases. ksize=31, scaled=10000 moltype=DNA
+[Kfinding query signatures...
+[Koutputting classifications to -
+[K[K[K... classifying contig_8 (file 1 of 1)[K[K[K... classifying contig_1 (file 1 of 1)[K[K[K... classifying contig_5 (file 1 of 1)[K[K[K... classifying contig_10 (file 1 of 1)[K[K[K... classifying contig_4 (file 1 of 1)[K[K[Kclassified 5 signatures total
