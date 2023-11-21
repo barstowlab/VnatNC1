@@ -1,0 +1,202 @@
+LOCUS       pDS5.30:_pBR322_backbon 4293 bp ds-DNA     circular     08-NOV-2023
+DEFINITION  .
+SOURCE      synthetic DNA construct
+  ORGANISM  synthetic DNA construct
+COMMENT     Imported using the Genbank importer. File name:
+            addgene-plasmid-113077-sequence-258261.gbk Expresses enCas9 fused
+            to PolI3M-TBD in E. coli. contains a BsmbI-flanked GFP cassette for
+            sgRNA cloning..
+FEATURES             Location/Qualifiers
+     misc_feature    303..337
+                     /label="J23115 Promoter"
+                     /ApEinfo_revcolor="#84b0dc"
+                     /ApEinfo_fwdcolor="#84b0dc"
+     RBS             493..504
+                     /label="strong bacterial ribosome binding site (Elowitz and Leibler, 2000)"
+                     /ApEinfo_revcolor="#f58a5e"
+                     /ApEinfo_fwdcolor="#f58a5e"
+     CDS             511..1224
+                     /label="superfolder GFP"
+                     /ApEinfo_revcolor="#b1ff67"
+                     /ApEinfo_fwdcolor="#b1ff67"
+                     /note="product: GFP variant that folds robustly even when fused to poorly folded proteins (Pedelacq et al., 2006) translation: MRKGEELFTGVVPILVELDGDVNGHKFSVRGEGEGDATNGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFARYPDHMKQHDFFKSAMPEGYVQERTISFKDDGTYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNFNSHNVYITADKQKNGIKANFKIRHNVEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSVLSKDPNEKRDHMVLLEFVTAAGITHGMDELYK"
+     CDS             511..1224
+                     /ApEinfo_revcolor="#84b0dc"
+                     /ApEinfo_fwdcolor="#84b0dc"
+                     /translation="MRKGEELFTGVVPILVELDGDVNGHKFSVRGEGEGDATNGKLTLKFICTTGKLPVPWPTLVTTLTYGVQCFARYPDHMKQHDFFKSAMPEGYVQERTISFKDDGTYKTRAEVKFEGDTLVNRIELKGIDFKEDGNILGHKLEYNFNSHNVYITADKQKNGIKANFKIRHNVEDGSVQLADHYQQNTPIGDGPVLLPDNHYLSTQSVLSKDPNEKRDHMVLLEFVTAAGITHGMDELYK"
+     terminator      1236..1307
+                     /label="rrnB T1 terminator"
+                     /ApEinfo_revcolor="#f8d3a9"
+                     /ApEinfo_fwdcolor="#f8d3a9"
+                     /note="note: transcription terminator T1 from the E. coli rrnB gene"
+     terminator      1323..1350
+                     /label="T7Te terminator"
+                     /ApEinfo_revcolor="#b7e6d7"
+                     /ApEinfo_fwdcolor="#b7e6d7"
+                     /note="note: phage T7 early transcription terminator"
+     misc_feature    1341..1363
+                     /label="Anneal"
+                     /ApEinfo_revcolor="#b7e6d7"
+                     /ApEinfo_fwdcolor="#b7e6d7"
+     misc_feature    1377..1402
+                     /label="Anneal"
+                     /ApEinfo_revcolor="#75c6a9"
+                     /ApEinfo_fwdcolor="#75c6a9"
+     CDS             complement(1429..2244)
+                     /label="KanR"
+                     /ApEinfo_revcolor="#faac61"
+                     /ApEinfo_fwdcolor="#faac61"
+                     /note="gene: aph(3')-Ia product: aminoglycoside phosphotransferase note: confers resistance to kanamycin in bacteria or G418 (Geneticin(R)) in eukaryotes translation: MSHIQRETSCSRPRLNSNMDADLYGYKWARDNVGQSGATIYRLYGKPDAPELFLKHGKGSVANDVTDEMVRLNWLTEFMPLPTIKHFIRTPDDAWLLTTAIPGKTAFQVLEEYPDSGENIVDALAVFLRRLHSIPVCNCPFNSDRVFRLAQAQSRMNNGLVDASDFDDERNGWPVEQVWKEMHKLLPFSPDSVVTHGDFSLDNLIFDEGKLIGCIDVGRVGIADRYQDLAILWNCLGEFSPSLQKRLFQKYGIDNPDMNKLQFHLMLDEFF"
+     CDS             complement(1429..2244)
+                     /ApEinfo_revcolor="#84b0dc"
+                     /ApEinfo_fwdcolor="#84b0dc"
+                     /translation="MSHIQRETSCSRPRLNSNMDADLYGYKWARDNVGQSGATIYRLYGKPDAPELFLKHGKGSVANDVTDEMVRLNWLTEFMPLPTIKHFIRTPDDAWLLTTAIPGKTAFQVLEEYPDSGENIVDALAVFLRRLHSIPVCNCPFNSDRVFRLAQAQSRMNNGLVDASDFDDERNGWPVEQVWKEMHKLLPFSPDSVVTHGDFSLDNLIFDEGKLIGCIDVGRVGIADRYQDLAILWNCLGEFSPSLQKRLFQKYGIDNPDMNKLQFHLMLDEFF*"
+     primer_bind     2152..2171
+                     /label="Kan-R"
+                     /ApEinfo_revcolor="#b7e6d7"
+                     /ApEinfo_fwdcolor="#b7e6d7"
+                     /note="note: Kanamycin resistance gene, reverse primer"
+     primer_bind     2236..2255
+                     /label="pENTR-R"
+                     /ApEinfo_revcolor="#faac61"
+                     /ApEinfo_fwdcolor="#faac61"
+                     /note="note: pENTR vectors, reverse primer"
+     misc_feature    complement(2285..2334)
+                     /label="Promoter??"
+                     /ApEinfo_revcolor="#d59687"
+                     /ApEinfo_fwdcolor="#d59687"
+     misc_feature    2375..2404
+                     /label="Anneal"
+                     /ApEinfo_revcolor="#c6c9d1"
+                     /ApEinfo_fwdcolor="#c6c9d1"
+     rep_origin      2473..3061
+                     /label="ori"
+                     /ApEinfo_revcolor="#b7e6d7"
+                     /ApEinfo_fwdcolor="#b7e6d7"
+                     /note="direction: RIGHT note: high-copy-number ColE1/pMB1/pBR322/pUC origin of replication"
+     primer_bind     2962..2981
+                     /label="pBR322ori-F"
+                     /ApEinfo_revcolor="#b4abac"
+                     /ApEinfo_fwdcolor="#b4abac"
+                     /note="note: pBR322 origin, forward primer"
+     primer_bind     3215..3232
+                     /label="L4440"
+                     /ApEinfo_revcolor="#d59687"
+                     /ApEinfo_fwdcolor="#d59687"
+                     /note="note: L4440 vector, forward primer"
+     misc_feature    3247..3386
+                     /label="bom"
+                     /ApEinfo_revcolor="#9eafd2"
+                     /ApEinfo_fwdcolor="#9eafd2"
+                     /note="note: basis of mobility region from pBR322"
+     primer_bind     complement(3312..3331)
+                     /label="pRS-marker"
+                     /ApEinfo_revcolor="#f8d3a9"
+                     /ApEinfo_fwdcolor="#f8d3a9"
+                     /note="note: pRS vectors, use to sequence yeast selectable marker"
+     primer_bind     3472..3494
+                     /label="pGEX 3'"
+                     /ApEinfo_revcolor="#ff9ccd"
+                     /ApEinfo_fwdcolor="#ff9ccd"
+                     /note="note: pGEX vectors, reverse primer"
+     CDS             complement(3488..3679)
+                     /label="rop"
+                     /ApEinfo_revcolor="#9eafd2"
+                     /ApEinfo_fwdcolor="#9eafd2"
+                     /note="gene: rop product: Rop protein, which maintains plasmids at low copynumber translation: MTKQEKTALNMARFIRSQTLTLLEKLNELDADEQADICESLHDHADELYRSCLARFGDDGENL"
+     CDS             complement(3488..3679)
+                     /ApEinfo_revcolor="#84b0dc"
+                     /ApEinfo_fwdcolor="#84b0dc"
+                     /translation="VTKQEKTALNMARFIRSQTLTLLEKLNELDADEQADICESLHDHADELYRSCLARFGDDGENL*"
+     RBS             3809..3820
+                     /label="strong bacterial ribosome binding site (Elowitz and Leibler, 2000)"
+                     /ApEinfo_revcolor="#d59687"
+                     /ApEinfo_fwdcolor="#d59687"
+     CDS             3827..193
+                     /label="CmR"
+                     /ApEinfo_revcolor="#85dae9"
+                     /ApEinfo_fwdcolor="#85dae9"
+                     /note="gene: cat product: chloramphenicol acetyltransferase note: confers resistance to chloramphenicol translation: MEKKITGYTTVDISQWHRKEHFEAFQSVAQCTYNQTVQLDITAFLKTVKKNKHKF*PAFIHILARLMNAHPEFRMAMKDGELVIWDSVHPCYTVFHEQTETFSSLWSEYHDDFRQFLHIYSQDVACYGENLAYFPKGFIENMFFVSANPWVSFTSFDLNVANMDNFFAPVFTMGKYYTQGDKVLMPLAIQVHHAVCDGFHVGRMLNELQQYCDEWQGGA"
+     CDS             3827..193
+                     /ApEinfo_revcolor="#84b0dc"
+                     /ApEinfo_fwdcolor="#84b0dc"
+                     /translation="MEKKITGYTTVDISQWHRKEHFEAFQSVAQCTYNQTVQLDITAFLKTVKKNKHKF*PAFIHILARLMNAHPEFRMAMKDGELVIWDSVHPCYTVFHEQTETFSSLWSEYHDDFRQFLHIYSQDVACYGENLAYFPKGFIENMFFVSANPWVSFTSFDLNVANMDNFFAPVFTMGKYYTQGDKVLMPLAIQVHHAVCDGFHVGRMLNELQQYCDEWQGGA*"
+     primer_bind     complement(3893..3912)
+                     /label="CAT-R"
+                     /ApEinfo_revcolor="#ff9ccd"
+                     /ApEinfo_fwdcolor="#ff9ccd"
+                     /note="note: Chloramphenicol resistance gene, reverse primer"
+ORIGIN
+        1 tgatttaaac gtggccaata tggacaactt cttcgccccc gttttcacca tgggcaaata
+       61 ttatacgcaa ggcgacaagg tgctgatgcc gctggcgatt caggttcatc atgccgtttg
+      121 tgatggcttc catgtcggca gaatgcttaa tgaattacaa cagtactgcg atgagtggca
+      181 gggcggggcg taaggatcct aactcgagct cggtaccaaa ttccagaaaa gaggcctccc
+      241 gaaagggggg ccttttttcg ttttggtccg ctgccaaacc agatgtcaac acagctacaa
+      301 cgtttatagc tagctcagcc cttggtacaa tgctagctga gacggaaagt gaaacgtgat
+      361 ttcatgcgtc attttgaaca ttttgtaaat cttatttaat aatgtgtgcg gcaattcaca
+      421 tttaatttat gaatgttttc ttaacatcgc ggcaactcaa gaaacggcag gttcggatct
+      481 tagctactag agaaagagga gaaatactag atgcgtaaag gcgaagagct gttcactggt
+      541 gtcgtcccta ttctggtgga actggatggt gatgtcaacg gtcataagtt ttccgtgcgt
+      601 ggcgagggtg aaggtgacgc aactaatggt aaactgacgc tgaagttcat ctgtactact
+      661 ggtaaactgc cggttccttg gccgactctg gtaacgacgc tgacttatgg tgttcagtgc
+      721 tttgctcgtt atccggacca tatgaagcag catgacttct tcaagtccgc catgccggaa
+      781 ggctatgtgc aggaacgcac gatttccttt aaggatgacg gcacgtacaa aacgcgtgcg
+      841 gaagtgaaat ttgaaggcga taccctggta aaccgcattg agctgaaagg cattgacttt
+      901 aaagaggacg gcaatatcct gggccataag ctggaataca attttaacag ccacaatgtt
+      961 tacatcaccg ccgataaaca aaaaaatggc attaaagcga attttaaaat tcgccacaac
+     1021 gtggaggatg gcagcgtgca gctggctgat cactaccagc aaaacactcc aatcggtgat
+     1081 ggtcctgttc tgctgccaga caatcactat ctgagcacgc aaagcgttct gtctaaagat
+     1141 ccgaacgaga aacgcgatca tatggttctg ctggagttcg taaccgcagc gggcatcacg
+     1201 catggtatgg atgaactgta caaatgacca ggcatcaaat aaaacgaaag gctcagtcga
+     1261 aagactgggc ctttcgtttt atctgttgtt tgtcggtgaa cgctctctac tagagtcaca
+     1321 ctggctcacc ttcgggtggg cctttctgcg tttatacgtc tcaCAGATAA AATATTcgaa
+     1381 ccactagtgc actgcagtac agtgttacaa ccaattaacc aattctgatt agaaaaactc
+     1441 atcgagcatc aaatgaaact gcaatttatt catatcagga ttatcaatac catatttttg
+     1501 aaaaagccgt ttctgtaatg aaggagaaaa ctcaccgagg cagttccata ggatggcaag
+     1561 atcctggtat cggtctgcga ttccgactcg tccaacatca atacaaccta ttaatttccc
+     1621 ctcgtcaaaa ataaggttat caagtgagaa atcaccatga gtgacgactg aatccggtga
+     1681 gaatggcaaa agcttatgca tttctttcca gacttgttca acaggccagc cattacgctc
+     1741 gtcatcaaaa tcactcgcat caaccaaacc gttattcatt cgtgattgcg cctgagcgag
+     1801 gcgaaatacg cgatcgctgt taaaaggaca attacaaaca ggaatcgaat gcaaccggcg
+     1861 caggaacact gccagcgcat caacaatatt ttcacctgaa tcaggatatt cttctaatac
+     1921 ctggaatgct gttttcccgg ggatcgcagt ggtgagtaac catgcatcat caggagtacg
+     1981 gataaaatgc ttgatggtcg gaagaggcat aaattccgtc agccagttta gtctgaccat
+     2041 ctcatctgta acatcattgg caacgctacc tttgccatgt ttcagaaaca actctggcgc
+     2101 atcgggcttc ccatacaatc gatagattgt cgcacctgat tgcccgacat tatcgcgagc
+     2161 ccatttatac ccatataaat cagcatccat gttggaattt aatcgcggcc tggagcaaga
+     2221 cgtttcccgt tgaatatggc tcataacacc ccttgtatta ctgtttatgt aagcagacag
+     2281 ttttattgtt catgatgata tatttttatc ttgtgcaatg taacatcaga gattttgaga
+     2341 cacaacgtgg ctttgttgaa taaatcgaac ttttgctgag ttgaaggatc aggagttcat
+     2401 gaccaaaatc ccttaacgtg agttttcgtt ccactgagcg tcagaccccg tagaaaagat
+     2461 caaaggatct tcttgagatc ctttttttct gcgcgtaatc tgctgcttgc aaacaaaaaa
+     2521 accaccgcta ccagcggtgg tttgtttgcc ggatcaagag ctaccaactc tttttccgaa
+     2581 ggtaactggc ttcagcagag cgcagatacc aaatactgtc cttctagtgt agccgtagtt
+     2641 aggccaccac ttcaagaact ctgtagcacc gcctacatac ctcgctctgc taatcctgtt
+     2701 accagtggct gctgccagtg gcgataagtc gtgtcttacc gggttggact caagacgata
+     2761 gttaccggat aaggcgcagc ggtcgggctg aacggggggt tcgtgcacac agcccagctt
+     2821 ggagcgaacg acctacaccg aactgagata cctacagcgt gagctatgag aaagcgccac
+     2881 gcttcccgaa gggagaaagg cggacaggta tccggtaagc ggcagggtcg gaacaggaga
+     2941 gcgcacgagg gagcttccag ggggaaacgc ctggtatctt tatagtcctg tcgggtttcg
+     3001 ccacctctga cttgagcgtc gatttttgtg atgctcgtca ggggggcgga gcctatggaa
+     3061 aaacgccagc aacgcggcct ttttacggtt cctggccttt tgctggcctt ttgctcacat
+     3121 gttctttcct gcgttatccc ctgattctgt ggataaccgt attaccgcct ttgagtgagc
+     3181 tgataccgct cgccgcagcc gaacgaccga gcgcagcgag tcagtgagcg aggaagcgga
+     3241 agagcgcctg atgcggtatt ttctccttac gcatctgtgc ggtatttcac accgcaatgg
+     3301 tgcactctca gtacaatctg ctctgatgcc gcatagttaa gccagtatac actccgctat
+     3361 cgctacgtga ctgggtcatg gctgcgcccc gacacccgcc aacacccgct gacgcgccct
+     3421 gacgggcttg tctgctcccg gcatccgctt acagacaagc tgtgaccttc tccgggagct
+     3481 gcatgtgtca gaggttttca ccgtcatcac cgaaacgcgc gaggcagctg cggtaaagct
+     3541 catcagcgtg gtcgtgaagc gattcacaga tgtctgcctg ttcatccgcg tccagctcgt
+     3601 tgagtttctc cagaagcgtt aatgtctggc ttctgataaa gcgggccatg ttaagggcgg
+     3661 ttttttcctg tttggtcact gatgcctccg tgtaaggggg atttctgttc atccctgaat
+     3721 tcgcatctag actgaactgg ccgataattg cagacgaacg gatttacttt acagctagct
+     3781 cagtcctagg tattatgcta gcgctagcaa agaggagaaa agatctatgg agaaaaaaat
+     3841 cactggatat accaccgttg atatatccca atggcatcgt aaagaacatt ttgaggcatt
+     3901 tcagtcagtt gctcaatgta cctataacca gaccgttcag ctggatatta cggccttttt
+     3961 aaagaccgta aagaaaaata agcacaagtt ttaaccggcc tttattcaca ttcttgcccg
+     4021 cctgatgaat gctcatccgg aatttcgtat ggcaatgaaa gacggtgagc tggtgatatg
+     4081 ggatagtgtt cacccttgtt acaccgtttt ccatgagcaa actgaaacgt tttcatcgct
+     4141 ctggagtgaa taccacgacg atttccggca gtttctacac atatattcgc aagatgtggc
+     4201 gtgttacggt gaaaacctgg cctatttccc taaagggttt attgagaata tgtttttcgt
+     4261 ttcagccaat ccctgggtga gtttcaccag ttt
+//
